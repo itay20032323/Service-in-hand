@@ -1,0 +1,29 @@
+.large-container{
+    background-color: white;
+    border: 0.5px solid #E9E9E9;
+    width: 38.5vmax;
+    height: 8vmax;
+    box-shadow: 0.5vmax 0.5vmax 0.53vmax rgba(198, 219, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+    /* margin: 0 auto; */
+}
+
+.large-container h3:nth-child(1) {
+    color: #4b4b4b;
+    font-weight: normal;
+    font-size: 2vmax;
+    margin: 0.3vmax 2vmax;
+}
+
+.large-container h3:nth-child(2) {
+    color: #4b4b4b;
+    font-size: 2vmax;
+    margin: 0.3vmax 2vmax;
+}
+
+

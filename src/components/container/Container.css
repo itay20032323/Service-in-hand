@@ -1,0 +1,10 @@
+.button-container{
+    border: 0.5px solid rgba(0, 255, 191, 0.25);
+    border-radius: 2.5vmax;
+    width: 18vmax;
+    height: 10vmax;
+    box-shadow: 0.86vmax 0.64vmax 0.53vmax rgba(198, 219, 255, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

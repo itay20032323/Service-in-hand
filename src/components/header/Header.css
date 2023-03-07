@@ -1,32 +1,36 @@
-header {
+header{
+    height: 10vh;
+}
+.top-header {
     margin: 0;
     background: linear-gradient(to right, #D0FAF0, #1DE9B6, #D0FAF0) ;
-    height: 7vmax;
+    height: 7vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header h1{
+.top-header h1{
     color: #ffffff;
-    font-size: 4vmax;
+    font-size: 4vh;
 }
 
-header .logo {
-    width: 6vmax;
+.top-header .logo {
+    width: 6vh;
     position: absolute;
     right: 1vw;
 }
 
-header .phone{
-    width: 6vmax;
-    position: relative;
-    right: 10vmin;
-    top: 1.72vmax;
+.phone{
+    width: 6vh;
+    position: absolute;
+    top: -5.8vh;
+    left: 2.5vh;
 }
 
 .under-light{
-    margin-top: 1vmax;
+    position: relative;
+    margin-top: 1vh;
     background: linear-gradient(to bottom, #a2f7e0, rgba(255, 255, 255, 0)) ;
-    height: 2vmax;
+    height: 2vh;
 }
