@@ -24,19 +24,19 @@
 }
 
 .under-main-div{
-
-}
-
-.under-main-div-wrapper{
     height: min(30vh, calc(100vw / 1.43));
-    /* height: calc(100vw / 1.43); */
     width: 100%;
     position: absolute;
     bottom: 0;
     overflow-y: hidden;
+}
+
+.under-main-div-wrapper{
+    width: fit-content;
+    margin: 2vmax auto 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 3%;
+    gap: 0.5vmax;
     align-items: flex-start;
 }
 
@@ -53,6 +53,24 @@
     z-index: 1;
 }
 
+/* .css-gfqxk9{
+    transform: translate(-50%, -50%) scale(0.3) ;
+    transition: transform 5s ease 
+} */
+
+.always-modal{
+    transition: transform 5s ease !important;
+}
+
+.go-modal{
+    transform: translate(-50%, -50%) scale(0.8) !important;
+    background-color: antiquewhite !important;
+}
+
+.close-modal{
+    transform: translate(-50%, -50%) scale(0.3) !important;
+}
+
 .light-div{
     background: linear-gradient(to top, #a2f7e0, rgba(255, 255, 255, 0)) ;
     height: 2vmax;
@@ -60,6 +78,10 @@
     position: absolute;
     bottom: min(30vh, calc(100vw / 1.43));
     /* bottom: calc(100vw / 1.43); */
+}
+
+.css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop {
+    background-color: rgba(0, 0, 0, 0) !important;
 }
 
 @media only screen and (orientation: landscape) {
@@ -81,14 +103,18 @@
         height: 100%;
     }
 
-    .under-main-div-wrapper{
+    .under-main-div{
         height: 102.5%;
         width: 50%;
     }
     
-    .under-main-div-wrapper img{
+    .under-main-div img{
         width: 100%;
         height: 100%;
+    }
+
+    .under-main-div-wrapper {
+        margin-top: 3.8vmax;
     }
 
 
