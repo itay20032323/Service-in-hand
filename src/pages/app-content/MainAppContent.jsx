@@ -1,16 +1,19 @@
 import React from "react";
-import "./MainAppContent.css";
+import "./MainAppContent.scss";
 import Container from "../../components/container/Container"
 import LargeContainer from "../../components/LargeContainer/LargeContainer";
-// import { useDispatch, useSelector } from "react-redux";
-// import { useEffect } from "react";
-// import { GetBaseUnits, GetRequestTypesToUnit } from "../slices/mainSlice";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect } from "react";
+import { GetBaseUnits, GetRequestTypesToUnit } from "../../slices/mainSlice";
+
+import { getBaseUnits, getRequestTypesToUnit } from "../../fetchFunctions";
 
 //Basic Modal
 // import BasicModal from "../../components/BasicModal/BasicModal";
 import Modal from "../../components/Modal/Modal";
 
 var mainList = ["תיאום יום קבלה", "תיאום צוות כשירות","מענה אישי", "תיאום מופע הטמעה", "Beework"];
+
 // console.log(mainList[0])
 
 function CreateContainer(info, i){
@@ -19,16 +22,20 @@ function CreateContainer(info, i){
 
 function MainAppContent(){
 
-    // const main = useSelector((state) => state.mainSlice);
-    // const dispatch = useDispatch();
-    // console.log(main.baseUnits);
-    // console.log(main.requestTypesToUnit)
+    const main = useSelector((state) => state.mainSlice);
+    const dispatch = useDispatch();
+    console.log(main.baseUnits);
+    console.log(main.requestTypesToUnit)
 
-    // useEffect(() => {
-    //     console.log('mount');
-    //     dispatch(GetBaseUnits())
-    //     dispatch(GetRequestTypesToUnit())
-    // }, [dispatch]); //First Render
+    useEffect(() => {
+        console.log('mount');
+
+        getBaseUnits();
+        getRequestTypesToUnit()
+
+        dispatch(GetBaseUnits())
+        dispatch(GetRequestTypesToUnit())
+    }, [dispatch]); //First Render
 
     return(
         <div className="main-app-content">

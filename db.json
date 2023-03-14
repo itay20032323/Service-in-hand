@@ -1,0 +1,51 @@
+{
+  "GetBaseUnits": [
+    {"unitID":1, "name":"bazap darom"},
+    {"unitID":1, "name":"bazap merkaz"},
+    {"unitID":1, "name":"bazap tzafon"}
+  ],
+  "GetRequestTypesToUnit": [
+    {
+        "codRequestType":1,
+        "requestType": "תיאום יום קבלה",
+        "units":
+        [{ "codUnit" :5 ,"name":"מרלוג מסווג"},{ "codUnit" :6 ,"name":"מרלוג עיקרי"},{ "codUnit" :7 ,"name":"מרלוג רכש"},
+        { "codUnit" :8 ,"name":"קבטיה"}]
+    },
+        
+    {
+        "codRequestType":2,
+        "requestType": "תיאום צוות כשירות",
+        "units":
+        [{ "codUnit" :5 ,"name":"מרלוג מסווג"},{ "codUnit" :6 ,"name":"מרלוג עיקרי"},{ "codUnit" :7 ,"name":"מרלוג רכש"},
+        { "codUnit" :8 ,"name":"קבטיה"}]
+    },
+
+    {
+      "codRequestType":3,
+      "requestType": "מענה אישי",
+      "units":
+      [{ "codUnit" :5 ,"name":"מרלוג מסווג"},{ "codUnit" :6 ,"name":"מרלוג עיקרי"},{ "codUnit" :7 ,"name":"מרלוג רכש"},
+      { "codUnit" :8 ,"name":"קבטיה"}]
+    },
+
+    {
+      "codRequestType":4,
+      "requestType": "תיאום מופע הטמעה",
+      "units":
+      [{ "codUnit" :5 ,"name":"מרלוג מסווג"},{ "codUnit" :6 ,"name":"מרלוג עיקרי"},{ "codUnit" :7 ,"name":"מרלוג רכש"},
+      { "codUnit" :8 ,"name":"קבטיה"}]
+    },
+
+    {
+      "codRequestType":5,
+      "requestType": "Beework",
+      "units":
+      [{ "codUnit" :5 ,"name":"מרלוג מסווג"},{ "codUnit" :6 ,"name":"מרלוג עיקרי"},{ "codUnit" :7 ,"name":"מרלוג רכש"},
+      { "codUnit" :8 ,"name":"קבטיה"}]
+    }
+],
+  "profile": {
+    "name": "typicode"
+  }
+}

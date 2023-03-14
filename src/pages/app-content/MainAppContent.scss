@@ -1,3 +1,5 @@
+@use '../../sassStyles/variables' as *;
+
 .main-app-content{
     height: 81.9vh;
     text-align: center;
@@ -29,50 +31,35 @@
     position: absolute;
     bottom: 0;
     overflow-y: hidden;
+
+    &-wrapper{
+        width: fit-content;
+        margin: 2vmax auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5vmax;
+        align-items: flex-start;
+    }
+    
+    & img{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0.25;
+        z-index: 1;
+    }
 }
 
-.under-main-div-wrapper{
-    width: fit-content;
-    margin: 2vmax auto 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5vmax;
-    align-items: flex-start;
-}
-
-.under-main-div h4{
-    /* margin-right: 50px; */
-}
-
-.under-main-div img{
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    opacity: 0.25;
-    z-index: 1;
-}
 
 /* .css-gfqxk9{
     transform: translate(-50%, -50%) scale(0.3) ;
     transition: transform 5s ease 
 } */
 
-.always-modal{
-    transition: transform 5s ease !important;
-}
-
-.go-modal{
-    transform: translate(-50%, -50%) scale(0.8) !important;
-    background-color: antiquewhite !important;
-}
-
-.close-modal{
-    transform: translate(-50%, -50%) scale(0.3) !important;
-}
 
 .light-div{
-    background: linear-gradient(to top, #a2f7e0, rgba(255, 255, 255, 0)) ;
+    background: linear-gradient(to top, $light-green-color, rgba(255, 255, 255, 0)) ;
     height: 2vmax;
     width: 100%;
     position: absolute;
